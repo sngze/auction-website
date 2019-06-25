@@ -28,7 +28,7 @@
     ResultSet rs = null;
     
     try{
-        String jdbcUrl  = "Your Database URL";
+        String jdbcUrl  = "Database URL";
         String dbId  = "Database ID";
         String dbPass = "Database Password";
         
