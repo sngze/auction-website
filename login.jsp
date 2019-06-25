@@ -4,14 +4,14 @@
 <% request.setCharacterEncoding("euc-kr"); %>
 <html>
 <head>
-    <title>·Î±×ÀÎ</title>
+    <title>ë¡œê·¸ì¸</title>
 </head>
 <body>
     <script>
         var returnValue
 
         function fail(){
-           returnValue = alert("È¸¿øÁ¤º¸°¡ ¾ø½À´Ï´Ù.");
+           returnValue = alert("íšŒì›ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
            document.write(returnValue);
            history.back();
         }
@@ -19,7 +19,7 @@
 
     </script>
   <%
-  //·Î±×ÀÎ ¹öÆ°À» ´­·¶À» °æ¿ì µ¥ÀÌÅÍº£ÀÌ½º¿Í ºñ±³ÇÏ´Â ºÎºĞ
+  //ë¡œê·¸ì¸ ë²„íŠ¼ì„ ëˆŒë €ì„ ê²½ìš° ë°ì´í„°ë² ì´ìŠ¤ì™€ ë¹„êµí•˜ëŠ” ë¶€ë¶„
     String strUsername=request.getParameter("username");
     String strPassword=request.getParameter("password");
 
@@ -28,9 +28,9 @@
     ResultSet rs = null;
     
     try{
-        String jdbcUrl  = "jdbc:oracle:thin:@sedb.deu.ac.kr:1521:orcl";
-        String dbId  = "a20143228";
-        String dbPass = "20143228";
+        String jdbcUrl  = "Your Database URL";
+        String dbId  = "Database ID";
+        String dbPass = "Database Password";
         
         Class.forName("oracle.jdbc.driver.OracleDriver");
         conn = DriverManager.getConnection(jdbcUrl,dbId,dbPass);
